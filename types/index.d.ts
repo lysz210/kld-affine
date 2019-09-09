@@ -1,4 +1,18 @@
 declare module 'kld-affine' {
+  interface ICoordinate2D {
+    x: number
+    y: number
+  }
+
+  interface IMatrix2D {
+    a: number
+    b: number
+    c: number
+    d: number
+    e: number
+    f: number
+  }
+
   class Point2D {
     x: number
     y: number
