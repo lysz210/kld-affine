@@ -3,7 +3,7 @@ declare module 'kld-affine' {
     x: number
     y: number
 
-    constructor (x: number = 0, y: number = 0)
+    constructor (x?: number, y?: number)
 
     clone (): Point2D
 
@@ -36,7 +36,7 @@ declare module 'kld-affine' {
     x: number
     y: number
 
-    constructor (x: number = 0, y: number = 0)
+    constructor (x?: number, y?: number)
 
     static fromPoints(p1: Point2D, p2: Point2D): Vector2D
 
@@ -86,12 +86,12 @@ declare module 'kld-affine' {
     f: number
 
     constructor (
-      a: number = 1,
-      b: number = 0,
-      c: number = 0,
-      d: number = 1,
-      e: number = 0,
-      f: number = 0
+      a?: number,
+      b?: number,
+      c?: number,
+      d?: number,
+      e?: number,
+      f?: number
     )
 
     static IDENTITY: Matrix2D
@@ -162,6 +162,5 @@ declare module 'kld-affine' {
 
     toString (): string
   }
-
 
 }
